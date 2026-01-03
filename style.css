@@ -24,22 +24,26 @@ ul {
     justify-content: space-around;
 }
 
-h1{
+h1 {
     text-align: center;
     margin-top: 70px;
     color: rgb(243, 56, 56);
 }
-h3{
+
+h3 {
     text-align: center;
     color: red;
 }
 
-div{
+div {
     display: flex;
-    justify-content:center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-footer{
+footer {
     background-color: rgba(250, 250, 147, 0.596);
     border: 2px solid black;
     padding-left: 20px;
@@ -47,27 +51,35 @@ footer{
     margin: 10px;
 }
 
-.inputs{
+.inputs {
     margin: 15px;
     height: 30px;
     width: 50%;
 }
 
-.inputs[type="submit"]{
+.inputs[type="submit"] {
     cursor: pointer;
     width: 30%;
     background-color: rgba(243, 108, 74, 0.774);
 }
 
-#carreras{
-    color:black;
+#carreras {
+    color: black;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    img{
-        border: black 2px solid;
-        margin: 5px;
-        padding: 5px;
-        border-radius: 25px;
+    flex-direction: row;
+    gap: 10px;
+    figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;        
+        img {
+            border: black 2px solid;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 25px;
+        }
     }
 }
