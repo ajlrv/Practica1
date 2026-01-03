@@ -70,16 +70,58 @@ footer {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 10px;
+
     figure {
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;        
+        text-align: center;
+
         img {
             border: black 2px solid;
             margin: 5px;
             padding: 5px;
             border-radius: 25px;
+        }
+    }
+}
+
+#certif {
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    grid-template-rows: 8fr 8fr;
+    gap: 15px;
+    margin: 10px;
+
+    #cert1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #cert2 {
+        grid-column: 2/2;
+        grid-row: 4/2;
+    }
+
+    #cert3 {
+        grid-column: 1/2;
+        grid-row: 5/4;
+    }
+
+    #cert4 {
+        grid-column: 2/2;
+        grid-row: 10/6;
+    }
+
+    #cert1, #cert2, #cert3, #cert4 {
+        a {
+            img {
+                border: black 2px solid;
+                margin: 5px;
+                padding: 5px;
+                border-radius: 25px;
+                box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            }
         }
     }
 }
